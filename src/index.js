@@ -131,6 +131,7 @@ export default class AlphaScrollFlatList extends Component {
                         activeColor={this.props.activeColor}
                         fontColor={this.props.scrollBarColor}
                         scrollBarContainerStyle={this.props.scrollBarContainerStyle}
+                        letterStyle={this.props.letterStyle}
                         fontSizeMultiplier={this.props.scrollBarFontSizeMultiplier}
                         onScroll={debounce(this.handleOnScroll.bind(this))}
                         onScrollEnds={debounce(this.handleOnScrollEnds.bind(this))}
@@ -161,7 +162,8 @@ AlphaScrollFlatList.propTypes = {
     scrollBarFontSizeMultiplier: PropTypes.number,
     onScrollEnds: PropTypes.func,
     onScrollStarts: PropTypes.func,
-    scrollBarContainerStyle: PropTypes.object
+    scrollBarContainerStyle: PropTypes.object,
+    letterStyle: PropTypes.object
 };
 
 AlphaScrollFlatList.defaultProps = {
